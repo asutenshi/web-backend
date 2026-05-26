@@ -47,7 +47,7 @@ class Task {
         $errors = [];
         if (empty($this->title)) $errors[] = "Введите тему задачи";
         if (empty($this->typeId)) $errors[] = "Выберите тип задачи";
-        if (empty($this->taskDatetime) || strlen($this->taskDatetime) < 15) $errors[] = "Укажите корректную дату и время";
+        if (empty($this->taskDatetime) || strlen($this->taskDatetime) < 19) $errors[] = "Укажите корректную дату и время";
         if ($this->duration <= 0) $errors[] = "Выберите длительность";
         return $errors;
     }
