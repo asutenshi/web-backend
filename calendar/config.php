@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Asia/Irkutsk');
+
 $db_host = 'mysql';
 $db_name = 'calendar_app';
 $db_user = 'root';

@@ -152,13 +152,12 @@
                         <tr>
                             <td><?= e($t->getTypeName()) ?></td>
                             <td>
-                                <!-- Переход в карточку задачи (редактирование) -->
                                 <a href="edit.php?id=<?= $t->getId() ?>">
                                     <?= e($t->getTitle()) ?>
                                 </a>
                             </td>
                             <td><?= e($t->getLocation() ?: '-') ?></td>
-                            <td><?= date('d/m/Y H:i', strtotime($t->getTaskDatetime())) ?></td>
+                            <td><?= date('d/m/Y h:i A', strtotime($t->getTaskDatetime())) ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php endif; ?>
